@@ -1,0 +1,201 @@
+/* basic html elements */
+hr {
+  padding: 0 15%;
+  margin: 0 10%;
+}
+/* color of the main page */
+.top, .mid, .someComments {
+  background-color: #F5F5F5;
+  padding: 0.5rem;
+}
+.bottom {
+  background-color: #121212;
+  padding: 0.5rem;
+}
+.end {
+  color:#F5F5F5;
+  padding: 0.5rem;
+}
+/* the first navbar */
+.navbar {
+  padding: 0;
+
+}
+.navigate {
+  display: inline-block;
+  width: 83%;
+  padding-left:10%;
+  z-index: 1;
+}
+.socials {
+  width: 1rem;
+  height: 1rem;
+
+}
+.smedia{
+  display: inline;
+}
+
+.first.container-fluid {
+  padding: 0 10%;
+}
+
+/* the second navbar */
+.navbar-brand img{
+  height: 5rem;
+  width: 5rem;
+  margin-right: 10rem;
+}
+.dropdown-menu{
+  background-color: #F5F5F5;
+  border-style: none;
+  width: 20rem;
+}
+.dropdown-item{
+  position: relative;
+  right: 7%;
+}
+.navigate .navbar-light .navbar-nav .nav-link:hover{
+  color: #F05454;
+}
+@media screen and (max-width: 990px) {
+  .central {
+    text-align: center;
+  }
+}
+.searcher,.searcher .nav-link{
+  display: inline;
+}
+
+.topicsMenu{
+  border-style: none;
+  background-color:inherit;
+}
+
+
+/*--------------The mid document--------------*/
+
+.mid {
+  padding: 5% 0 5% 10%;
+}
+.someComments {
+  padding: 0 0 5% 10%;
+}
+
+.blogPost:hover {
+  color : black;
+  text-decoration: underline;
+}
+
+.blogPost {
+  color : black;
+}
+
+.card{
+  background-color: #F5F5F5;
+  border-style: none;
+  display: inline-block;
+}
+.card-title {
+  text-align: center;
+}
+.reqd {
+  background-color: inherit;
+  height: 100%;
+  position: fixed;
+}
+
+
+.title{
+  width: 80%;
+  text-align: center;
+  margin: 2%;
+}
+.card img:hover{
+  text-align: center;
+  height: 90%;
+  width: 90%;
+}
+
+img {
+ width: 90%;
+ object-fit: contain;
+ transition: width 0.5s;
+}
+
+.entry{
+  padding-bottom: 2%;
+}
+
+.entry a:hover{
+  color: #F05454;
+}
+
+.required {
+  background-color: inherit;
+  height: 100%;
+}
+
+.reqd .card{
+  background-color: inherit;
+}
+
+.sideImage{
+  width: 80%;
+  height: 20%;
+}
+
+@media screen and (max-width: 990px) {
+  .reqd{
+    z-index: -1;
+    position: static;
+  }
+}
+/* -------------------------------The signin specific----------------------------- */
+  .signin-mid{
+    padding: 2%;
+    background-color: #F5F5F5;
+  }
+  .signinForm{
+    margin: auto auto;
+  }
+
+/* ----------------------------The Comments----------------------------- */
+.myTitleImage img{
+  height:100%;
+  width:100%;
+}
+.myTitleImage{
+  height: 20rem;
+  width:100%;
+}
+
+
+.prevComments .list-group .list-group-item{
+  width: 70%;
+  background-color: #F5F5F5;
+  border-style: none;
+}
+
+/* ---------------------------The Bottom Element----------------------- */
+
+.bottom {
+  text-align: center;
+
+}
+.bottom a,.bottom p{
+  color: #F5F5F5;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.bottom .row{
+  margin-bottom: 1%;
+}
+
+/* ----------------------------The Highlight Section------------------------- */
+.deleteButton{
+  padding-left: 80%;
+}
+.card a{
+  text-decoration: none;
+}

@@ -1,0 +1,39 @@
+
+  <%- include('partials/header'); -%>
+
+  <!-- The mid part is discussed here -->
+
+  <div class="mid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="title">
+            <h2><%= title %></h2>
+            <img src="/images/icon/solar-system.png" alt="Title Image">
+          </div>
+          <p><%= content %></p>
+        </div>
+        <div class="col-lg-3">
+          <div class="reqd">
+            <div class="sides">
+
+              <hr>
+              <h4>DISCOVER MORE OF WHAT MATTERS TO YOU</h4>
+              <form action="/category" method="post">
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Self">Self</button>
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Photography">Photography</button>
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Travel">Travel</button>
+                <br>
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Work">Work</button>
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Foods & Drinks">Foods & Drinks</button>
+                <button type="submit" class="btn btn-outline-dark" name="field" value="Lifestyle">Lifestyle</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<%- include('partials/footer'); -%>
