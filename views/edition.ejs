@@ -1,0 +1,48 @@
+<%- include('partials/header'); -%>
+
+
+  <div class="mid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9">
+          <form class="draft needs-validation" action="/editon" method="post">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title of Post" name="postTitle" autocomplete="off" required>
+            <br>
+            <select class="form-select form-select-md" aria-label=".form-select-lg example" placeholder="Title of Post" name="postCategory" required>
+              <option value="Self">Self</option>
+              <option value="Photography">Photography</option>
+              <option value="Travel">Travel</option>
+              <option value="Work">Work</option>
+              <option value="Foods">Foods & Drinks</option>
+              <option value="Lifestyle">Lifestyle</option>
+            </select>
+            <br>
+            <label for="exampleFormControlTextarea1" class="form-label">Create your Post</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Compose your Blog here" name="postBody" required><%= myText %></textarea>
+            <button type="submit" class="btn btn-outline-dark btn-lg" value="Submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-3">
+          <div class="required">
+            <div class="sides">
+              <br>
+              <hr>
+              <img class="sideImage" src="data:image/jpg;base64,<%= myTitleImage %>" alt="your title image">
+              <p>Choose your Title Image</p>
+                <div class="input-group">
+                  <form action="/titleImage" method="post" enctype="multipart/form-data">
+                    <input type="file" class="form-control" id="inputGroupFile02" name="titleImage">
+                    <button class="btn btn-outline-dark" type="submit" name="button">Upload</button>
+                  </form>
+                </div>
+              <br>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer'); -%>

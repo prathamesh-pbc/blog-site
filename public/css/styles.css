@@ -151,6 +151,13 @@ img {
     position: static;
   }
 }
+
+.theText{
+  white-space:pre-wrap;
+}
+.PostImage{
+  width: 60%;
+}
 /* -------------------------------The signin specific----------------------------- */
   .signin-mid{
     padding: 2%;
@@ -175,6 +182,23 @@ img {
   width: 70%;
   background-color: #F5F5F5;
   border-style: none;
+}
+.userPosts{
+  border-style: none;
+  background-color: inherit;
+  text-align: center;
+  color: red;
+}
+.userPosts:hover{
+  border-style: none;
+  background-color: inherit;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+.bt{
+  display: inline;
+
 }
 
 /* ---------------------------The Bottom Element----------------------- */

@@ -9,34 +9,41 @@
         <div class="col-lg-9">
           <div class="title">
             <h2><%= title %></h2>
-            <img src="data:image/jpg||png;base64,<%= titleImage %>" alt="Title Image">
+            <img src="data:image/jpg||png;base64,<%= titleImage %>" class="PostImage" alt="Title Image">
           </div>
-          <p><%= content %></p>
+          <p class="theText"><%= content %></p>
           <hr>
           <hr>
           <br>
           <div class="prevComments">
-            <h3><%= (comments.length)/2 %> Comments</h3>
+
+            <h3><%= (comments.length) %> Comments</h3>
             <ul class="list-group">
-              <% for (var j =0; j<comments.length; j=j+2){ %>
-                <li class="list-group-item"><b><span><%= comments[j+1] %></span></b>
-                <span><%= comments[j] %></span></li>
+              <% for (var j =0; j<comments.length; j++){ %>
+                <li class="list-group-item"><b><span><%= comments[j].posterName %></span></b><br>
+                  <span class="theText"><%= comments[j].text %></span></li>
               <%}%>
             </ul>
+
           </div>
           <div class="someComments">
+
             <form class="draftComment" action="/comment" method="post">
               <label for="exampleFormControlTextarea1" class="form-label">Leave Comment</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="commentArea"></textarea>
               <button type="submit" class="btn btn-outline-dark btn-sm" name="commentButton" value="/category/<%= t %>/posts/<%= postid %>/">Submit</button>
             </form>
+
           </div>
         </div>
         <div class="col-lg-3">
           <div class="reqd">
             <div class="sides">
               <h6>About</h6>
-              <p>about the author</p>
+              <form class="card-title" action="/writerProfile/<%=  nameAuthor  %> " method="post" >
+                <button class="userPosts" type="submit" name="zoo" value="<%=  nameAuthor  %>">Article by <%=  nameAuthor  %></button>
+              </form>
+              <p><em><%= aboutAuthor %></em></p>
               <br>
               <hr>
               <h4>DISCOVER MORE OF WHAT MATTERS TO YOU</h4>

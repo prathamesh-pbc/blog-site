@@ -15,6 +15,9 @@
                         <img src="data:image/jpg;base64,<%= posts[i].frontImage %>" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title"><%=  posts[i].name  %></h5>
+                          <form class="card-title" action="/writerProfile/<%=  posts[i].writer  %> " method="post" >
+                            <button class="userPosts" type="submit" name="zoo" value="<%=  posts[i]._id  %>">by <%=  posts[i].writer  %></button>
+                          </form>
                             <% const txt = posts[i].content.substring(0,100); %>
                           <p class="card-text"> <%=  txt  %></p>
                         </div>
